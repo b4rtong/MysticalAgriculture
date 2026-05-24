@@ -62,8 +62,8 @@ public class RecipeIngredientCache {
         this.caches.clear();
 
         cache(manager, RecipeType.SMELTING, recipe -> List.of(recipe.input()));
-        cache(manager, ModRecipeTypes.REPROCESSOR.get(), recipe -> List.of(recipe.getIngredient()));
-        cache(manager, ModRecipeTypes.SOUL_EXTRACTION.get(), recipe -> List.of(recipe.getIngredient()));
+        cache(manager, ModRecipeTypes.REPROCESSOR.get(), recipe -> List.of(recipe.getIngredient().ingredient()));
+        cache(manager, ModRecipeTypes.SOUL_EXTRACTION.get(), recipe -> List.of(recipe.getIngredient().ingredient()));
         cache(manager, ModRecipeTypes.SOULIUM_SPAWNER.get(), recipe -> List.of(recipe.getIngredient().ingredient()));
         cache(manager, ModRecipeTypes.ORE_INFUSION.get(), recipe -> recipe.getIngredients().stream().map(SizedIngredient::ingredient).toList());
 

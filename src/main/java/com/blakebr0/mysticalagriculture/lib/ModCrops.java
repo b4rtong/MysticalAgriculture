@@ -135,7 +135,6 @@ public final class ModCrops {
 
     // ENDER IO
     public static final Crop GRAINS_OF_INFINITY = new Crop(MysticalAgriculture.resource("grains_of_infinity"), CropTier.TWO, CropType.RESOURCE, LazyIngredient.item("enderio:grains_of_infinity"));
-    public static final Crop COPPER_ALLOY = new Crop(MysticalAgriculture.resource("copper_alloy"), CropTier.THREE, CropType.RESOURCE, LazyIngredient.item("enderio:copper_alloy_ingot"));
     public static final Crop REDSTONE_ALLOY = new Crop(MysticalAgriculture.resource("redstone_alloy"), CropTier.THREE, CropType.RESOURCE, LazyIngredient.item("enderio:redstone_alloy_ingot"));
     public static final Crop CONDUCTIVE_ALLOY = new Crop(MysticalAgriculture.resource("conductive_alloy"), CropTier.THREE, CropType.RESOURCE, LazyIngredient.item("enderio:conductive_alloy_ingot"));
     public static final Crop SOULARIUM = new Crop(MysticalAgriculture.resource("soularium"), CropTier.FOUR, CropType.RESOURCE, LazyIngredient.item("enderio:soularium_ingot"));
@@ -322,7 +321,6 @@ public final class ModCrops {
 
         // ENDER IO
         registry.register(withRequiredMods(GRAINS_OF_INFINITY, "enderio"));
-        registry.register(withRequiredMods(COPPER_ALLOY, "enderio"));
         registry.register(withRequiredMods(REDSTONE_ALLOY, "enderio"));
         registry.register(withRequiredMods(CONDUCTIVE_ALLOY, "enderio"));
         registry.register(withRequiredMods(SOULARIUM, "enderio"));
